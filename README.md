@@ -12,9 +12,8 @@ Road to success:
 - [ ] Develop PHP backend for querying, uploading, management
 - [ ] Develop frontent
 
-##Developmental Plans and Information
-
-###Directory Structure
+## Developmental Plans and Information
+### Directory Structure
 
 For the time being, for modularity, and for easy configuration, all files are refined to the web directory
 
@@ -35,10 +34,11 @@ Streamira
 |   |-- Console
 |   `-- Management
 `-- Admin
-    |-- User
-    `-- Site
+|   |-- User
+|   `-- Site
+`-- Tmp
+    `-- Uploads
 ```
-##Liscensure
+## Liscensure
 Under the [AGPL](https://www.gnu.org/licenses/agpl-3.0)
-
 ![AGPL logo](/Liscensure/agplv3-88x31.png)
