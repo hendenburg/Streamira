@@ -1,6 +1,6 @@
 # Streamira
 
-Streamira is a self-hosted music streaming service dedicated to modularity and redundancy. With a focus on a decentralized daemonization of music hosting. Not only is Streamira an organizational daemon, but it plans to be a subsystem of client and web services. Another primary feature will be an extensible API.
+Streamira is a self-hosted music streaming service dedicated to modularity and redundancy. With a focus on a decentralized daemonization of music hosting. Not only is Streamira an organizational daemon, but it plans to be a subsystem of client and web services. Another primary feature will be an extensible API.<sup>1</sup>
 
 ## Developmental Plans and Information
 
@@ -12,7 +12,9 @@ The daemon for streamira is central for the project. Everything else is entirely
 
 The daemon is planned to utilize many features of the program. While, of course, the daemon is built to utilize local shares, it can take act in a master/slave way to further the library. Utlizing daemons on other nodes in order to add information to the central database (note, duplication and database redundancy will be worked into the program as a central asset). When installing the daemon, it is the configuration that decides how it acts, whether as a master or a slave.
 
-A master daemon will be used to issue commands to various other machines. This will be done purely over ssh, and monitoring will either be utilized through ssh or through an xmmp server. This is dependent on the further development of the program, and possible an option when configuring either daemon. The daemon can act independantly without a database, purely as a organizational tool for music, but it will not serve music, only acting as an intermediary between the user and the seperate web player. 
+A master daemon will be used to issue commands to various other machines. This will be done purely over ssh, and monitoring will either be utilized through ssh or through an xmmp server. This is dependent on the further development of the program, and possible an option when configuring either daemon. The daemon can act independently without a database, purely as a organizational tool for music, but it will not serve music, only acting as an intermediary between the user and the seperate web player.
+
+The daemon will act as the central authentication server for the multi-user subsystem. Saving passwords and user information securely, and authenitication the information over SSl if possible, if certificates are provided by the administrator. The Administrator user can not only edit the information of music, but also may monitor the status of v
 
 #### Daemon Summary
 
@@ -22,6 +24,10 @@ A master daemon will be used to issue commands to various other machines. This w
 ## Disclaimer
 
 Note: The creation of streamira is in no way meant to encourage or fasciliate piracy in any way. The distribution of this software is with the assumption that the music utilized is properly obtained and within rights to be streamed personally. 
+
+## Footnotes
+
+1. Streamira can be utilized for podcasts as well as other audio files, but it will primarily be utilized for music. 
 
 ## Liscensure
 Under the [AGPL](https://www.gnu.org/licenses/agpl-3.0)
