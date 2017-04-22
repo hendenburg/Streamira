@@ -1,6 +1,6 @@
 # Streamira
 
-Streamira is a self-hosted music streaming service dedicated to modularity and redundancy. With a focus on a decentralized daemonization of music hosting. Not only is Streamira an organizational daemon, but it plans to be a subsystem of client and web services. Another primary feature will be an extensible API.<sup>1</sup>
+Streamira is a self-hosted music streaming service dedicated to modularity and redundancy. With a focus on a decentralized daemonization of music hosting. Not only is Streamira an organizational daemon, but it plans to be a subsystem of client and web services. Another primary feature will be an extensible API.<sup>1</sup> When speaking of Streamira, it speaks of the ecosystem in its entirely. The Streamira-Daemon, the Streamia-Web, and the Streamira-Client(s) services.
 
 ## Developmental Plans and Information
 
@@ -21,6 +21,14 @@ If neccessary, multi-user permissions will include access to certain music or di
 #### Daemon Summary
 
 The following is listed and checkmarked list in summarization of the above features for the databse:
+- [ ] Distributed Daemon Support
+- [ ] Multi-uSer authentication
+- [ ] Music Organization Abilities
+- [ ] Multi-machine monitoring
+- [ ] Multi-client support
+- [ ] Caching ability
+- [ ] Client-Server independance
+- [ ] Administration monitoring and access control
 
 ### Client Information
 
