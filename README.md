@@ -22,7 +22,7 @@ If neccessary, multi-user permissions will include access to certain music or di
 
 The following is listed and checkmarked list in summarization of the above features for the databse:
 - [ ] Distributed Daemon Support
-- [ ] Multi-uSer authentication
+- [ ] Multi-user authentication
 - [ ] Music Organization Abilities
 - [ ] Multi-machine monitoring
 - [ ] Multi-client support
