@@ -14,9 +14,13 @@ The daemon is planned to utilize many features of the program. While, of course,
 
 A master daemon will be used to issue commands to various other machines. This will be done purely over ssh, and monitoring will either be utilized through ssh or through an xmmp server. This is dependent on the further development of the program, and possible an option when configuring either daemon. The daemon can act independently without a database, purely as a organizational tool for music, but it will not serve music, only acting as an intermediary between the user and the seperate web player.
 
-The daemon will act as the central authentication server for the multi-user subsystem. Saving passwords and user information securely, and authenitication the information over SSl if possible, if certificates are provided by the administrator. The Administrator user can not only edit the information of music, but also may monitor the status of v
+The daemon will act as the central authentication server for the multi-user subsystem. Saving passwords and user information securely, and authenitication the information over SSl if possible, if certificates are provided by the administrator. The Administrator user can not only edit the information of music, but also may monitor the status of other daemons (Which can be done both from the web service as well as from the console, and possibly through an administrative section of the client). The Administrator has access permission control of the users, as well as the ability to add users, but whether registration becomes a piece of the daemon is yet to be decided. 
+
+If neccessary, multi-user permissions will include access to certain music or directories. One feature planned for future daemon support will be music sync, allowing music position and time to be synced between the clients. This feature is presented on some music players, but the goal is for consistency and accuracy. Recent listens are another feature that may be saved in the database, but should not contain too much data. This data should be available to be cleared through client-server authentication, at the request of the client (Although proper security features should be insituted to prevent the abuse of this ability). The database acts merely as a middle man between the music directory and the client. So if the music database is compromised (Which would be seperate from the user data and authentication database) then it can merely be repopulated with information from the music directory and the accompanying daemons<sup>2</sup>.
 
 #### Daemon Summary
+
+The following is listed and checkmarked list in summarization of the above features for the databse:
 
 ### Client Information
 
@@ -28,6 +32,7 @@ Note: The creation of streamira is in no way meant to encourage or fasciliate pi
 ## Footnotes
 
 1. Streamira can be utilized for podcasts as well as other audio files, but it will primarily be utilized for music. 
+2. Of course, if there are backups and duplicates, it will be the daemons job to turn to these for fixes. The goal is for the daemon to be as independant and self-healing as possible.
 
 ## Liscensure
 Under the [AGPL](https://www.gnu.org/licenses/agpl-3.0)
